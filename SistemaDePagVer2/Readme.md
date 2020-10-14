@@ -1,4 +1,4 @@
-# Sistema de control de pag con php
+# Sistema de control de paginas con php
 - Una segunda version de un sistema de control de paginas con php.
 
 # Estructura de la pagina.
@@ -9,16 +9,16 @@ Index.php
 # Observaciones
 Todos los html, js y css que se indican en el parametros 'p' se buscaran dentro de './resource/'+p
 
-ejemplo:
+# Ejemplo:
 <a href="?p=home">Home</a>
 $_GET['p'] -> esto tomara el valor 'home'
 
-Nosotros por un tema de orden se definira
-            $page = "./resource/$p/$p.html";
-            $css = "./resource/$p/$p.css";
-            $js =  "./resource/$p/$p.js";
+Por un tema de orden se definira<br>
+$page = "./resource/$p/$p.html";<br>
+$css = "./resource/$p/$p.css";<br>
+$js =  "./resource/$p/$p.js";<br>
 
-Por lo cual al pasarle 'home' de parametros el index.php incluira el contenido de:
- './resource/home/home.html'.
- './resource/home/home.js'.
- './resource/home/home.css'.
+Por lo cual al pasarle 'home' de parametros el index.php incluira el contenido de:<br>
+'./resource/home/home.html'.<br>
+'./resource/home/home.js'.<br>
+'./resource/home/home.css'.<br>
